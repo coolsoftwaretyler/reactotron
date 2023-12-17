@@ -43,32 +43,12 @@ const MainContainer = styled.div`
   flex: 1;
 `
 
-const RootStore = t.model({
-  name: t.string,
-  price: t.number,
-})
-
-const rootStore = RootStore.create({
-  name: "Test",
-  price: 1,
-})
-
-const LittleComponent = observer(() => {
-  return (
-    <div>
-      <div>{rootStore.name}</div>
-      <div>{rootStore.price}</div>
-    </div>
-  )
-})
-
 function App() {
   return (
     <Router>
       <RootContextProvider>
         <AppContainer>
           <TopSection>
-            <LittleComponent />
             <SideBar />
 
             <MainContainer>
