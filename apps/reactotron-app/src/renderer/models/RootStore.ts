@@ -20,6 +20,13 @@ export const RootStore = t
       store.sidebar = store.sidebarOpen ? "closed" : "open"
     },
   }))
+  .actions((store) => ({
+    afterCreate() {
+      setTimeout(() => {
+        store.toggleSidebar()
+      }, 5000)
+    },
+  }))
 
 export type RootStore = Instance<typeof RootStore>
 
