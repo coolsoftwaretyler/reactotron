@@ -15,8 +15,6 @@ import Overlay from "./pages/reactNative/Overlay"
 import Storybook from "./pages/reactNative/Storybook"
 import CustomCommands from "./pages/customCommands"
 import Help from "./pages/help"
-import { observer } from "mobx-react-lite"
-import { t } from "mobx-state-tree"
 
 const AppContainer = styled.div`
   position: absolute;
